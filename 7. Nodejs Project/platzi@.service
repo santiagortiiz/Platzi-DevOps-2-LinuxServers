@@ -1,0 +1,15 @@
+[Unit]
+Description=Balanceo de carga para platzi
+Documentation=https://github.com/edisoncast/linux-platzi
+After=network.target
+
+[Service]
+Environment=PORT=%i
+Type=simple
+User=nodejs
+WorkingDirectory=/home/nodejs/linux-platzi
+ExecStart=/usr/bin/node /home/nodejs/linux-platzi/server.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

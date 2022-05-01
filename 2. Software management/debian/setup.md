@@ -1,7 +1,11 @@
 # Debian
 sudo apt update
+apt list --upgradable
 sudo apt upgrade
 sudo apt dist-upgrade
+
+## Curl
+sudo apt install curl -y
 
 ## https://linuxpip.org/ifconfig-command-not-found-fixes/#:~:text=installing%20net%2Dtools-,Why%20ifconfig%20command%20not%20found%20happens%3F,to%20the%20lack%20of%20maintenance.
 sudo apt install net-tools
